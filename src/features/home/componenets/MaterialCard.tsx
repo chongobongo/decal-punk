@@ -9,7 +9,6 @@ const protestFont = Protest_Strike({
 
 export const MaterialCard = ({
     material,
-    button_text,
 }: {
     material: {
     id: string
@@ -17,7 +16,6 @@ export const MaterialCard = ({
     header: string
     description: string
     },
-    button_text: string
 
 }) => {
 
