@@ -1,0 +1,19 @@
+
+
+
+REACT ICONS: https://react-icons.github.io/react-icons/
+    npm install react-icons --save
+
+RADIX UI:
+    npm i @radix-ui/react-slot
+    npm install @radix-ui/react-dropdown-menu
+    npm i @radix-ui/react-checkbox
+
+LUCIDE REACT:
+    npm i lucide-react
+
+CLASS VARIANCE AUTHORITY: https://cva.style/docs
+    npm i class-variance-authority
+
+TAILWIND MERGE: https://www.npmjs.com/package/tailwind-merge
+    npm i tailwind-merge

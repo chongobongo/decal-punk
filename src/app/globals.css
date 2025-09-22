@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ProtestStrike-Regular;
+  src: url("../fonts/ProtestStrike-Regular.ttf")
+}
+
 @import "tailwindcss";
 
 :root {
@@ -6,6 +11,9 @@
 }
 
 @theme inline {
+
+  --font-protest: ProtestStrike-Regular, "san-serif";
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
