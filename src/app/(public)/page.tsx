@@ -19,6 +19,7 @@ import { TemplateBanner } from "@/features/home/componenets/Templates";
 import { MaterialCard } from "@/features/home/componenets/MaterialCard";
 import { BrandTestimonials } from "@/features/home/componenets/BrandTestimonials";
 
+import { Footer } from "@/features/home/componenets/Footer";
 
 import { Protest_Strike } from "next/font/google"
 
@@ -138,6 +139,10 @@ export default function Home() {
                       </div>
                   })}
         </div>
+      </div>
+
+      <div id="footer" className="mt-6">
+        <Footer />
       </div>
 </main> 
   );
