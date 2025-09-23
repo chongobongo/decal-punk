@@ -50,7 +50,7 @@ export const Footer = () => {
                         <li><Link href="/">Contact us</Link></li>
                         <li><Link href="/">Quote</Link></li>
                         <li><Link href="/">FAQs</Link></li>
-                        <li><Link href="/">How to's</Link></li>
+                        <li><Link href="/">How to&apos;s</Link></li>
                         <li><Link href="/">Shipping</Link></li>
                         <li><Link href="/">Payments</Link></li>
                     </ul>
@@ -81,7 +81,7 @@ export const Footer = () => {
                 <p className="text-white">Sign up to our email list for insider deals, tips and inspiration.</p>
                 <div id="consent" className="flex flex-row">
                     <Checkbox className="mr-2 bg-white"/>
-                    <p className="text-sm text-white">I consent that Decal-Punk Inc may process my personal data for the purpose of direct marketing. I can unsubscribe anytime via link in email and read details in Decal-Punk's Privacy Policy. </p>
+                    <p className="text-sm text-white">I consent that Decal-Punk Inc may process my personal data for the purpose of direct marketing. I can unsubscribe anytime via link in email and read details in Decal-Punk&apos;s Privacy Policy. </p>
                 </div>
                 <div id="buttons" className="flex flex-row  mt-6  gap-4">
                     <div id="email_link" className="w-60 h-10   grid items-center justify-items-center rounded-lg bg-white">
