@@ -17,3 +17,64 @@ CLASS VARIANCE AUTHORITY: https://cva.style/docs
 
 TAILWIND MERGE: https://www.npmjs.com/package/tailwind-merge
     npm i tailwind-merge
+
+DRIZZLE: https://orm.drizzle.team/docs/get-started-postgresql
+    npm i drizzle-orm pg
+    npm i -D drizzle-kit @types/pg
+
+    To apply to package.json scripts:
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "drizzle-kit migrate",
+        "db:studio": "drizzle-kit studio"
+
+        npx drizzle-kit generate
+        npx drizzle-kit migrate
+        npx drizzle-kit push
+        npx drizzle-kit pull
+        npx drizzle-kit check
+        npx drizzle-kit up
+        npx drizzle-kit studio
+    To run in the CLI:
+        npm run db:migrate
+        npm run db:generate
+        npm run db:studio
+** Drizzle helpers
+** POSTGRESS: https://www.npmjs.com/package/postgres
+    npm i postgres
+
+** DOTENV: https://www.npmjs.com/package/dotenv
+        npm i dotenv
+    DOTENV Exoand: https://www.npmjs.com/package/dotenv-expand
+        npm i dotenv-expand
+
+CLERK AUTHORIZATION: https://dashboard.clerk.com/apps/app_2sMeZuoPOdB1echYFIzQig1BxCi/instances/ins_2sMeZwN46ckPD6EYNGWcZjLbTux
+    npm install @clerk/nextjs
+    Clerk Tutorials:
+     Video
+        Build A Course Platform: https://www.youtube.com/watch?v=OAyQ3Wyyzfg&t=2308s
+        How to handle Custom Signup flow in Clerk: https://www.youtube.com/watch?v=FQCTzomz6bw
+        Crash course on Handling Webhooks | Clerk Webhooks: https://www.youtube.com/watch?v=VCSI9mkQYMY
+        Clerk Middleware guide for Role based access: https://www.youtube.com/watch?v=1u2SOSUPKHY
+        Power your next app with Clerk + Supabase: https://www.youtube.com/watch?v=ICNulnfQvd8
+        NextJS 15 Authentication & Webhooks with Clerk: https://www.youtube.com/watch?v=EbxSB6dPDq4
+
+        Role-Based Access Control with Clerk and Next.js: https://www.youtube.com/watch?v=xOItK8fItjc  
+        Sync Clerk Data to Your Database Using Webhooks: https://www.youtube.com/watch?v=UTjwyDuVjRM
+
+     Static
+        Integrate Supabase with Clerk: https://clerk.com/docs/integrations/databases/supabase
+        Clerk: https://dashboard.clerk.com/apps/app_2u3c5lnaNUG0tEx7Ejovtxg8xMt/instances/ins_2u3c5qCViXzksWMdMMG8rXJ8JPV
+        NGROK Local Tunnel: https://dashboard.ngrok.com/get-started/setup/windows
+        Clerk Subabase: https://supabase.com/partners/integrations/clerk
+        Integrate Clerk Authentication & Supabase Database Step-by-Step: https://www.youtube.com/watch?v=e4yC0A0QU2E
+        Sync Clerk data to your app with webhooks: https://clerk.com/docs/webhooks/sync-data
+        Integrate with Supabase: https://clerk.com/docs/integrations/databases/supabase#create-a-table-and-enable-rls-on-it
+        Using Drizzle as a client for interacting with Supabase: https://makerkit.dev/docs/next-supabase-turbo/recipes/drizzle-supabase#keep-the-supabase-database-url-variable-confidential
+        *Forwarded Address
+    SVIX: https://www.npmjs.com/package/svix
+        npm install svix
+    NGROK: https://www.npmjs.com/package/ngrok
+           https://dashboard.ngrok.com/get-started/setup/windows
+           How to Install Ngrok on Windows 11 | Expose your localhost to everyone | NGROK SETUP: https://www.youtube.com/watch?v=aFwrNSfthxU
+        npm i ngrok
+        Terminal Command: ngrok http http://localhost:3000

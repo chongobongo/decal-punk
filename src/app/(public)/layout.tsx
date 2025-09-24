@@ -1,5 +1,9 @@
 
 import Link from "next/link"
+import { getCurrentUser } from "@/services/clerk"
+import { canAccessMemberPages } from "../permissions/general"
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs"
+import { Button } from "@/components/ui/button"
 
 import {
   DropdownMenu,
@@ -92,10 +96,44 @@ function Navbar() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu></li>
-          <li><Link href="/materials">Materials</Link></li>
+          <li><Link href="/">Materials</Link></li>
          <li><Link href="/">Support</Link></li>
+                 <div>
+
+      </div>
         </ul>
+<div className="mt-2">
+            <SignedOut>
+          <Button variant={"punk"} className="self-center" asChild>
+            <label className="text-black"><SignInButton>Sign In</SignInButton></label>
+              </Button>
+            </SignedOut>
+</div>
+
+      <SignedIn>
+          <MemberLink />
+            <div className="size-8 self-center">
+              <UserButton
+                appearance={{
+                  elements: {
+                    userButtonAvatarBox: { width: "100%", height: "100%" },
+                  },
+                }}
+              />
+            </div>
+      </SignedIn>
       </nav>
     </header>
   )
 }
+
+async function MemberLink() {
+    const user = await getCurrentUser({ allData: true })
+      if (!canAccessMemberPages(user)) return null
+
+    return (
+      <Link className="hover:bg-accent/10 flex items-center px-2" href="/admin">
+        Admin
+      </Link>
+    )
+  }
