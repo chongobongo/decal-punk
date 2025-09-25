@@ -30,6 +30,13 @@ export async function POST(req: Request) {
   const payload = await req.json()
   const body = JSON.stringify(payload)
 
+  const validateRole = (role: unknown): "user" | "member" | "admin" | undefined => {
+  if (role === "user" || role === "member" || role === "admin") {
+    return role;
+  }
+  return undefined; // or "user" as default
+};
+
   let evt: WebhookEvent
 
   // Verify payload with headers
@@ -73,7 +80,7 @@ switch (evt.type) {
           email,
           name,
           imageUrl: evt.data.image_url,
-          role: evt.data.public_metadata.role,
+          role: validateRole(evt.data.public_metadata.role),
         }
       )
     }
