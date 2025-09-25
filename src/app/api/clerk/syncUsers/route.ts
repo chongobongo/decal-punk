@@ -6,6 +6,10 @@ import { NextResponse } from "next/server"
 export async function GET(request: Request) {
   const user = await currentUser()
 
+const isValidRole = (role: unknown): role is "user" | "member" | "admin" => {
+  return typeof role === "string" && ["user", "member", "admin"].includes(role);
+};
+
   if (user == null) return new Response("User not found", { status: 500 })
   if (user.fullName == null) {
     return new Response("User name missing", { status: 500 })
@@ -19,7 +23,7 @@ export async function GET(request: Request) {
     name: user.fullName,
     email: user.primaryEmailAddress.emailAddress,
     imageUrl: user.imageUrl,
-    role: user.publicMetadata.role ?? "user",
+    role: isValidRole(user.publicMetadata.role) ? user.publicMetadata.role : "user",
   })
 
   await syncClerkUserMetadata(dbUser)
