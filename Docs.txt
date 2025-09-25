@@ -9,6 +9,14 @@ RADIX UI:
     npm install @radix-ui/react-dropdown-menu
     npm i @radix-ui/react-checkbox
 
+TYPESAFE ENVIRONMENT VARAIBLES: https://env.t3.gg/docs/nextjs
+    npm-link : https://www.npmjs.com/package/@t3-oss/env-nextjs
+        npm i @t3-oss/env-nextjs
+
+ZOD VALIDATION: https://zod.dev/
+    npm: https://www.npmjs.com/package/zod
+        npm i zod
+
 LUCIDE REACT:
     npm i lucide-react
 
