@@ -98,6 +98,7 @@ function Navbar() {
             </DropdownMenu></li>
           <li><Link href="/">Materials</Link></li>
          <li><Link href="/">Support</Link></li>
+          <li><Link href="/">dp-v1</Link></li>
                  <div>
 
       </div>
@@ -137,3 +138,4 @@ async function MemberLink() {
       </Link>
     )
   }
+
