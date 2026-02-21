@@ -69,6 +69,21 @@ CLERK AUTHORIZATION: https://dashboard.clerk.com/apps/app_2sMeZuoPOdB1echYFIzQig
         Role-Based Access Control with Clerk and Next.js: https://www.youtube.com/watch?v=xOItK8fItjc  
         Sync Clerk Data to Your Database Using Webhooks: https://www.youtube.com/watch?v=UTjwyDuVjRM
 
+        How to Take Clerk from Development to Production (Full Guide): https://www.youtube.com/watch?v=Uf_LD-7lLl0
+        Taking Clerk to production: Essential steps explained: https://www.youtube.com/watch?v=qKU6MQp-g7w&t=362s
+
+    Series:
+        How To Install Clerk In NextJS And Setup The Signup And Login Form Components: https://www.youtube.com/watch?v=rdsGIetwKFQ&list=PLviSqSbWD51P_HHBaIn2c2auRsvQOgCkG
+
+    
+        NextJS 15 Authentication & Webhooks with Clerk, Vercel:  https://www.youtube.com/watch?v=EbxSB6dPDq4&t=2721s
+
+    Supabase Integration:
+        How Clerk integrates with Supabase: https://www.youtube.com/watch?v=hcw38fUPNbw
+        Clerk Setup: https://clerk.com/docs/guides/development/integrations/databases/supabase
+        WebHooks Overview: https://clerk.com/docs/guides/development/webhooks/overview
+    Clerk JWT Signin Key: 7aeab289-3b60-4046-a823-b242dc9e2a9e
+
      Static
         Integrate Supabase with Clerk: https://clerk.com/docs/integrations/databases/supabase
         Clerk: https://dashboard.clerk.com/apps/app_2u3c5lnaNUG0tEx7Ejovtxg8xMt/instances/ins_2u3c5qCViXzksWMdMMG8rXJ8JPV
@@ -78,6 +93,7 @@ CLERK AUTHORIZATION: https://dashboard.clerk.com/apps/app_2sMeZuoPOdB1echYFIzQig
         Sync Clerk data to your app with webhooks: https://clerk.com/docs/webhooks/sync-data
         Integrate with Supabase: https://clerk.com/docs/integrations/databases/supabase#create-a-table-and-enable-rls-on-it
         Using Drizzle as a client for interacting with Supabase: https://makerkit.dev/docs/next-supabase-turbo/recipes/drizzle-supabase#keep-the-supabase-database-url-variable-confidential
+ 
         *Forwarded Address
     SVIX: https://www.npmjs.com/package/svix
         npm install svix
