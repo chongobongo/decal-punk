@@ -29,13 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-      >
+
+      <body>
         <Navbar />
         {children}
       </body>
-    </html>
+
   );
 }
 
@@ -99,7 +98,7 @@ function Navbar() {
           <li><Link href="/">Materials</Link></li>
          <li><Link href="/">Support</Link></li>
          <li><Link href="/">dp-v1</Link></li>
-                 <div>
+      <div>
 
       </div>
         </ul>

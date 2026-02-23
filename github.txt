@@ -1,0 +1,37 @@
+Here's how to push to a GitHub repository:
+First-time setup (if you haven't already):
+
+Clone the repo (if you don't have it locally yet):
+
+   git clone https://github.com/username/repository-name.git
+Then navigate into it: cd repository-name
+The basic push workflow:
+
+Stage your changes:
+
+   git add .
+(The . adds all changed files, or replace it with a specific filename)
+
+Commit your changes:
+
+   git commit -m "Your commit message here"
+
+Push to GitHub:
+
+   git push origin main
+Replace main with your branch name if it's different (e.g., master or a feature branch).
+
+If it's a brand new local repo you want to push for the first time:
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/username/repository-name.git
+git push -u origin main
+
+Common issues:
+
+Authentication: GitHub no longer accepts passwords — you'll need a personal access token or SSH key.
+Behind the remote: If your push is rejected, run git pull origin main first to sync, then push again.
+Wrong branch: Use git branch to see which branch you're on.
+
+Let me know if you run into any specific errors!
