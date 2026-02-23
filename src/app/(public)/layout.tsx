@@ -97,7 +97,7 @@ function Navbar() {
             </DropdownMenu></li>
           <li><Link href="/">Materials</Link></li>
          <li><Link href="/">Support</Link></li>
-         <li><Link href="/">decal-punk-clerk keys-v1</Link></li>
+         <li><Link href="/">decal-punk-clerk keys-v2</Link></li>
       <div>
 
       </div>
